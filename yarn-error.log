@@ -1,0 +1,37 @@
+Arguments: 
+  /usr/local/bin/node /Users/admin/.yarn/bin/yarn.js add express body-parser
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/Users/admin/.yarn/bin:/Users/admin/Library/Android/sdk/tools:/Users/admin/Library/Android/sdk/platform-tools:/usr/local/mysql/bin:/Users/admin/flutter/bin::/usr/local/Cellar/nginx/1.15.3/bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  10.10.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.npm.taobao.org registry.npm.taobao.org:80
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+
+npm manifest: 
+  {
+    "name": "race",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
