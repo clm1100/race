@@ -1,0 +1,26 @@
+<div class="aside">
+    <div class="profile">
+        <img class="avatar" src="../uploads/avatar.jpg">
+        <h3 class="name">管理员</h3>
+    </div>
+    <ul class="nav">
+        <li <%=$data==='index'?'class=active':''%>  >
+            <a href="/"><i class="fa fa-dashboard"></i>仪表盘</a>
+        </li>
+        <li <%=$data==='races'?'class=active':''%> >
+            <a href="/races"><i class="fa fa-list"></i>所有比赛</a>
+        </li>
+        <li <%=$data==='addrace'?'class=active':''%> >
+            <a href="/addrace"><i class="fa fa-address-book"></i>添加比赛</a>
+        </li>
+        <li <%=$data==='teams'?'class=active':''%>>
+            <a href="teams"><i class="fa fa-users"></i>参赛队伍</a>
+        </li>
+        <li>
+            <a href="comments"><i class="fa fa-comments"></i>评论</a>
+        </li>
+        <li>
+            <a href="users"><i class="fa fa-user"></i>用户</a>
+        </li>
+    </ul>
+</div>
