@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="/assets/vendors/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/vendors/nprogress/nprogress.css">
   <link rel="stylesheet" href="/assets/css/admin.css">
+  <link rel="stylesheet" href="assets/vendors/datepicker/css/bootstrap-datetimepicker.css">
   <script src="/assets/vendors/nprogress/nprogress.js"></script>
 </head>
 <body>
   <script>NProgress.start()</script>
 
   <div class="main">
-    <% include('./common/__navbar.html') %>
+    <%- include('./common/__navbar.html') -%>
     <div class="container-fluid">
       <div class="page-title">
         <h1 style="text-align: center">添加比赛</h1>
@@ -22,42 +23,52 @@
       <!-- <div class="alert alert-danger">
         <strong>错误！</strong>发生XXX错误
       </div> -->
-      <form class="row">
+      <form class="row" id="reacform">
         <div class="col-md-3"></div>
         <div class="col-md-3">
           <div class="form-group">
             <label for="slug">比赛地址</label>
-            <input id="slug" class="form-control" name="slug" type="text" placeholder="slug">
+            <input id="slug"
+                   class="form-control"
+                   name="address"
+                   type="text"
+                   placeholder="填写比赛地址">
           </div>
           <div class="form-group">
-            <label for="category">主场队伍</label>
-            <select id="category" class="form-control" name="category">
+            <label for="home">主场队伍</label>
+            <select id="home" class="form-control" name="home_teamid">
+              <option value="0">请选择队伍</option>
+              <option value="2">南京队</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="away">客场队伍</label>
+            <select id="away" class="form-control" name="away_teamid">
+              <option value="0">请选择队伍</option>
               <option value="1">北京队</option>
               <option value="2">南京队</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="category">客场队伍</label>
-            <select id="category" class="form-control" name="category">
-              <option value="1">北京队</option>
-              <option value="2">南京队</option>
-            </select>
+            <label for="created">比赛时间</label>
+            <input id="created" class="form-control" name="created" readonly>
           </div>
           <div class="form-group">
-            <label for="created">发布时间</label>
-            <input id="created" class="form-control" name="created" type="date">
-          </div>
-          <div class="form-group">
-            <input type="button" class="btn btn-primary"  value="保存">
+            <input id="btn" type="button" class="btn btn-primary"  value="保存">
           </div>
         </div>
       </form>
     </div>
   </div>
-  <% include('./common/__aside.html','addrace') %>
-
-  <script src="/assets/vendors/jquery/jquery.min.js"></script>
-  <script src="/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script>NProgress.done()</script>
+  <%- include('./common/__aside.html',{current:'addrace'}) -%>
+  <script src="/assets/vendors/datepicker/js/bootstrap-datetimepicker.js"></script>
+  <script src="/assets/vendors/datepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+  <script src="/assets/js/addrace.js"></script>
+  <script type="text/template" id="list">
+    <option value="0">请选择队伍</option>
+    {{each list}}
+    <option value="{{$value.id}}">{{$value.name}}</option>
+    {{/each}}
+  </script>
 </body>
 </html>

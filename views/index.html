@@ -13,10 +13,10 @@
   <script>NProgress.start()</script>
 
   <div class="main">
-    <% include('./common/__navbar.html') %>
+    <%- include('./common/__navbar.html') -%>
     <div class="container-fluid">
       <div class="jumbotron text-center">
-        <p><a class="btn btn-primary btn-lg" href="post-add" role="button">添加比赛</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/addrace" role="button">添加比赛</a></p>
       </div>
       <div class="row">
         <div class="col-md-4">
@@ -35,10 +35,6 @@
       </div>
     </div>
   </div>
-
-  <% include('./common/__aside.html','index') %>
-  <script src="/assets/vendors/jquery/jquery.min.js"></script>
-  <script src="/assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script>NProgress.done()</script>
+  <%- include('./common/__aside.html',{current:'index'}) -%>
 </body>
 </html>
