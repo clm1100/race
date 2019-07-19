@@ -42,6 +42,10 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
+base64-url@^2.2.1:
+  version "2.3.2"
+  resolved "https://registry.npmjs.org/base64-url/-/base64-url-2.3.2.tgz#d7ea32e80ce3c3ad49f823e77c4dd247c6b81759"
+
 bignumber.js@7.2.1:
   version "7.2.1"
   resolved "https://registry.npmjs.org/bignumber.js/-/bignumber.js-7.2.1.tgz#80c048759d826800807c4bfd521e50edbba57a5f"
@@ -392,6 +396,10 @@ is-keyword-js@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/is-keyword-js/-/is-keyword-js-1.0.3.tgz#ac30dcf35b671f4b27b17f5cb57235126021132d"
 
+is.object@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/is.object/-/is.object-1.0.0.tgz#e4f4117e9f083b35c8df5cf817ea3efb0452fdfa"
+
 isarray@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
@@ -417,6 +425,19 @@ joi@^14.3.1:
 js-tokens@^3.0.1:
   version "3.0.2"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
+
+json-parse-safe@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/json-parse-safe/-/json-parse-safe-1.0.5.tgz#fc18258806ed2e286151ca815eac4c633d219ed6"
+
+json-web-token@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/json-web-token/-/json-web-token-3.1.1.tgz#c154b867094ecf3b858c1f6b94aa81f6ed4ed8e5"
+  dependencies:
+    base64-url "^2.2.1"
+    is.object "^1.0.0"
+    json-parse-safe "^1.0.5"
+    xtend "^4.0.1"
 
 jsonwebtoken@^8.1.0, jsonwebtoken@^8.5.1:
   version "8.5.1"
@@ -850,6 +871,6 @@ wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
-xtend@^4.0.0:
+xtend@^4.0.0, xtend@^4.0.1:
   version "4.0.2"
   resolved "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"

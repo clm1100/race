@@ -9,6 +9,7 @@ const myAjax = (url) =>{
     return new Promise((resolve, reject)=>{
         superagent.get(url).end(function(err, result) {
             if (err) {
+                console.log(err,"===============");
                 return reject(err)
             } else {
                 if(result && result.text){
