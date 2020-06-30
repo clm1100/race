@@ -246,9 +246,9 @@ express-art-template@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/express-art-template/-/express-art-template-1.0.1.tgz#fbde936adce0462cde191d35dd9ce70b4af57798"
 
-express-jwt@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.npmjs.org/express-jwt/-/express-jwt-5.3.1.tgz#66f05c7dddb5409c037346a98b88965bb10ea4ae"
+express-jwt@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/express-jwt/-/express-jwt-6.0.0.tgz#20886c730983ffb1c706a4383235df86eff349b8"
   dependencies:
     async "^1.5.0"
     express-unless "^0.3.0"
